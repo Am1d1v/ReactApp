@@ -20,7 +20,7 @@ function App() {
       },
 
       {
-        date: new Date(2023, 1, 7),
+        date: new Date(2023, 3, 7),
         description: "Some Item3",
         amount: 300
       }
