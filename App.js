@@ -8,19 +8,19 @@ function App() {
 
     const costs = [
       {
-        date: new Date(2023, 1, 7),
+        date: new Date(2023, 7, 1),
         description: "Some Item1",
         amount: 100
       },
 
       {
-        date: new Date(2023, 2, 7),
+        date: new Date(2023, 7, 2),
         description: "Some Item2",
         amount: 200
       },
 
       {
-        date: new Date(2023, 3, 7),
+        date: new Date(2023, 7, 3),
         description: "Some Item3",
         amount: 300
       }

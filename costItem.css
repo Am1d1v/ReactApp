@@ -38,7 +38,29 @@
     padding: 0.5rem;
     border-radius: 12px;
   }
+
+  .cost-date{
+    background-color: #9a77c9;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px;
+  }
+
+  .cost-date__day{
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .cost-date__month{
+    font-size: 20px;
+  }
+
+  .cost-date__year{
+    font-size: 20px;
+    
+  }
   
+
   @media (min-width: 580px) {
     .cost-item__description {
       flex-direction: row;
