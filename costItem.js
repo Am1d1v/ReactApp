@@ -1,6 +1,6 @@
-import './costItem.css'
-import CostDate from './costDate'; 
+import CostDate from './CostDate/costDate'; 
 import { useState } from 'react';
+import './costItem.css'
 
 
 function CostItem(props){

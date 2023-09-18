@@ -1,4 +1,4 @@
-import './costItem.css'
+import '../costItem.css'
 
 
 function CostDate(props){
