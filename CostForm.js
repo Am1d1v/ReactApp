@@ -4,28 +4,35 @@ import './CostForm.css'
 const CostForm = () => {
 
   const [newCostName, setNewCostName] = useState('');  
+  const [newAmout, setNewAmout] = useState(''); 
+  const [newDate, setNewDate] = useState('');  
+
+
   const nameChangeHandler = (e) => {
     setNewCostName(e.target.value );
-    console.log(newCostName)
   }
 
-
-  const [newAmout, setNewAmout] = useState('');  
   const amountChangeHandler = (e) => {
     setNewAmout(e.target.value);
-    console.log(newAmout)
   }
 
-  
-  const [newDate, setNewDate] = useState('');  
   const dateHandler = (e) => {
     setNewDate(e.target.value);
-    console.log(newDate)
   }
 
+  const submitHandler = (event) => {
+    event.preventDefault();
+
+    const costData = {
+      name: newCostName,
+      amount: newAmout,
+      date: new Date(newDate)
+    };
+    console.log(costData);
+  }
 
   return (
-    <form action="">
+    <form onSubmit={submitHandler}>
         <div className='new-const__controls'>
             <div className='new-cost__control'>
                 <label htmlFor="">Название</label>
