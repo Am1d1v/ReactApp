@@ -3,9 +3,18 @@ import CostForm from './CostForm';
 
 function NewCost(){
 
+    const SaveCostData = (inputCostData) => {
+
+        const costData = {
+            ...inputCostData,
+            id: Math.random().toString()
+        }
+        console.log(costData);
+    }
+
     return(
         <div className='new-cost'>
-            <CostForm />
+            <CostForm onSaveCostData={SaveCostData} />
         </div>
     )
 }
